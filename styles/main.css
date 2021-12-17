@@ -26,7 +26,7 @@
 }
 
 .section-1 {
-  padding: 40px 375px 0 375px;
+  padding: 40px 300px 0 300px;
 }
 
 @media (max-width: 1440px) {
@@ -86,7 +86,112 @@
 
 .section-1 main {
   height: calc(100vh - 62px - 40px);
-  background-color: red;
+}
+
+.section-1 main .main-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-1 main .main-grid .grid-flex {
+  margin-top: 50px;
+  position: relative;
+}
+
+.section-1 main .main-grid .grid-flex h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 134%;
+  letter-spacing: -2.50105px;
+  color: #444444;
+}
+
+.section-1 main .main-grid .grid-flex .line {
+  width: 54px;
+  height: 6px;
+  background: #ff7132;
+}
+
+.section-1 main .main-grid .grid-flex p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 200%;
+  color: #666666;
+  margin-top: 32px;
+}
+
+.section-1 main .main-grid .grid-flex .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+  margin-top: 35px;
+}
+
+.section-1 main .main-grid .grid-flex .btn .btn1:nth-child(1) {
+  width: 197px;
+  height: 67.01px;
+  background: #ff7132;
+  border-radius: 40px;
+  border: none;
+  font-style: normal;
+  font-weight: "Poppins SemiBold";
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.section-1 main .main-grid .grid-flex .btn .btn2:nth-child(2) {
+  width: 243px;
+  height: 67.01px;
+  border: 1px solid #ff7132;
+  border-radius: 40px;
+  background-color: transparent;
+  font-weight: "Poppins SemiBold";
+  font-size: 18px;
+  line-height: 27px;
+  color: #444444;
+}
+
+.section-1 main .main-grid .grid-flex img {
+  width: 500px;
+}
+
+.section-1 main .main-grid .grid-flex .line1 {
+  width: 16px;
+  height: 16px;
+  background: #fad36c;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+}
+
+.section-1 main .main-grid .grid-flex .line2 {
+  width: 22px;
+  height: 22px;
+  background: #8b6fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  right: 0;
+}
+
+.section-1 main .main-grid .grid-flex .line3 {
+  width: 24px;
+  height: 24px;
+  background: #13cb73;
+  border-radius: 50%;
+  bottom: 0;
 }
 
 body {

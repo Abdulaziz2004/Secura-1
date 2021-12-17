@@ -1,53 +1,140 @@
 .section-1 {
-    padding: 40px 375px 0 375px;
-    
-    @media (max-width: 1440px) {
-        padding: 40px 200px 0 200px;
-    }
+  padding: 40px 300px 0 300px;
 
-    header {
-        height: 62px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;    
+  @media (max-width: 1440px) {
+    padding: 40px 200px 0 200px;
+  }
 
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 50px;
+  header {
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-            a {
-                text-decoration: none;
-                font-family: $fw-500;
-                font-size: 20px;
-                line-height: 30px;
-                letter-spacing: -0.500211px;
-                color: $mainBlack;
-            }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 50px;
 
-            .active {
-                color: $orange;
-            }
+      a {
+        text-decoration: none;
+        font-family: $fw-500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: -0.500211px;
+        color: $mainBlack;
+      }
 
-            .btn {
-                font-family: $fw-400;
-                padding: 15px 32px;
-                border: 1px solid $orange;
-                color: $orange;
-                border-radius: 30px;
+      .active {
+        color: $orange;
+      }
 
+      .btn {
+        font-family: $fw-400;
+        padding: 15px 32px;
+        border: 1px solid $orange;
+        color: $orange;
+        border-radius: 30px;
 
-                &:hover {
-                    background-color: $orange;
-                    color: #ffffff;
-                }
-            }
+        &:hover {
+          background-color: $orange;
+          color: #ffffff;
         }
+      }
     }
+  }
 
-    main {
-        height: calc(100vh - 62px - 40px);
-        background-color: red;
-    
+  main {
+    height: calc(100vh - 62px - 40px);
+    // background-color: red;
+    .main-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: space-between;
+      .grid-flex {
+        margin-top: 50px;
+        position: relative;
+
+        h1 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 80px;
+          line-height: 134%;
+          letter-spacing: -2.50105px;
+          color: #444444;
+        }
+        .line {
+          width: 54px;
+          height: 6px;
+          background: #ff7132;
+        }
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 200%;
+          color: #666666;
+          margin-top: 32px;
+        }
+        .btn {
+          display: flex;
+          gap: 26px;
+          margin-top: 35px;
+          .btn1:nth-child(1) {
+            width: 197px;
+            height: 67.01px;
+            background: #ff7132;
+            border-radius: 40px;
+            border: none;
+            font-style: normal;
+            font-weight: $fw-600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #fff;
+          }
+          .btn2:nth-child(2) {
+            width: 243px;
+            height: 67.01px;
+            border: 1px solid #ff7132;
+            border-radius: 40px;
+            background-color: transparent;
+            font-weight: $fw-600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #444444;
+          }
+        }
+
+        img {
+          width: 500px;
+        }
+
+        .line1 {
+          width: 16px;
+          height: 16px;
+          background: #fad36c;
+          border-radius: 50%;
+          position: absolute;
+          top: 30%;
+        }
+        .line2 {
+          width: 22px;
+          height: 22px;
+          background: #8b6fff;
+          border-radius: 50%;
+          position: absolute;
+          top: 35%;
+          right: 0;
+        }
+        .line3 {
+          width: 24px;
+          height: 24px;
+          background: #13cb73;
+          border-radius: 50%;
+          bottom: 0;
+        }
+      }
     }
+  }
 }
