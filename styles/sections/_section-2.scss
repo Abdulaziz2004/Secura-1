@@ -1,0 +1,68 @@
+.section-2 {
+  padding: 0 300px 160px 300px;
+  margin-top: 160px;
+
+  .title {
+    text-align: center;
+    font-style: normal;
+    font-weight: $fw-600;
+    font-size: 54px;
+    line-height: 140%;
+    color: #444444;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    .grid-flex {
+      padding: 40px 58px 41px 37px;
+      background: #ffffff;
+      box-shadow: 0px 30px 80px rgba(102, 102, 102, 0.08);
+      border-radius: 10px;
+      border: 1px solid #f4f4f4;
+      margin-top: 100px;
+
+      .belgi {
+        width: 68px;
+        height: 68px;
+        background: #76de8479;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h3 {
+        font-style: normal;
+        font-weight: $fw-500;
+        font-size: 28px;
+        line-height: 42px;
+        letter-spacing: -0.656526px;
+        color: #666666;
+        margin-top: 40px;
+      }
+      p {
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 200%;
+        color: #666666;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-style: normal;
+        font-weight: $fw-600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #666666;
+        margin-top: 40px;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
